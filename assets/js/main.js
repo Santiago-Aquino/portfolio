@@ -116,10 +116,6 @@ const buttonDarkMode = document.getElementById("dark__mode");
 const header = document.getElementById("header");
 const links = document.getElementsByTagName("a");
 
-window.addEventListener('resize', function () {
-  this.location.reload()
-});
-
 buttonDarkMode.addEventListener("click", (e) => {
   e.preventDefault();
 
