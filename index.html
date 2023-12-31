@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio - Santiago Aquino</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid" id="nav">
+        <div>
+          <a href="#" class="nav__logo">Santiago Aquino</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre mí</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Tecnologías</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Proyectos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contacto</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="dark__mode" class="nav__link"> <i class="bx bxs-moon"></i> </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Bienvenido/a,<br />Soy
+            <span class="home__title-color">Santiago</span><br />
+            Backend Developer
+          </h1>
+
+          <a href="#" class="button">Contacto</a>
+        </div>
+
+        <div class="home__social">
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <img
+            src="./assets/img/backend-developer.jpg"
+            alt="Mi imagen profesional"
+            style="
+              height: 80%;
+              width: 80%;
+              margin-left: 1.5rem;
+              border-radius: 10px;
+            "
+          />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">Sobre mí</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/backend-developer.jpg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Sobre mí</h2>
+            <p class="about__text">
+              Quiero contarte que he trabajado en diferentes grupos
+              multidisciplinarios como desarrollador backend. He trabajado con
+              tecnologías como Node.js, Django, NestJS, Express.js y bases de
+              datos tanto relacionales como no relacionales. Actualmente estoy
+              ampliando mis conocimientos en el lado del Frontend, al mismo
+              tiempo que sigo adquiriendo habilidades en el backend.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Tecnologías</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Tecnologías</h2>
+            <p class="skills__text">
+              Estas son algunas de las tecnologias/skills que manejo a la hora
+              de trabajar.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-nodejs skills__icon"></i>
+                <span class="skills__name">Node.js</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage"></span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-data skills__icon"></i>
+                <span class="skills__name">DB - SQL/NoSQL</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage"></span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-github skills__icon"></i>
+                <span class="skills__name">GITHUB</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage"></span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-git skills__icon"></i>
+                <span class="skills__name">GIT</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage"></span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/tecnologias3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Proyectos</h2>
+
+        <div class="work__container bd-grid">
+          <a
+            href="https://github.com/No-Country/s12-20-m-python"
+            class="work__img"
+            target="_blank"
+          >
+            <img src="assets/img/guardianes.png" alt="" style="height: 100%" />
+          </a>
+          <a
+            href="https://github.com/No-Country/s11-02-m-node-react"
+            class="work__img"
+            target="_blank"
+          >
+            <img src="assets/img/ecosubasta.png" alt="" style="height: 100%" />
+          </a>
+          <a
+            href="https://github.com/No-Country/c13-27-m-node-react"
+            class="work__img"
+            target="_blank"
+          >
+            <img src="assets/img/readmw-01.png" alt="" style="height: 100%" />
+          </a>
+          <a
+            href="https://github.com/Santiago-Aquino/Proyecto-SQL"
+            class="work__img"
+            target="_blank"
+          >
+            <img src="assets/img/sql.png" alt="" style="height: 100%" />
+          </a>
+          <a
+            href="https://github.com/Santiago-Aquino/Aquino-Santiago-Digitalers"
+            class="work__img"
+            target="_blank"
+          >
+            <img
+              src="assets/img/pf-digitalers.png"
+              style="height: 100%"
+              alt=""
+            />
+          </a>
+          <a href="https://github.com/Santiago-Aquino/proyecto-final-backend" class="work__img" target="_blank">
+            <img src="assets/img/ecommerce.png" alt="" style="height: 100%" />
+          </a>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input
+              type="text"
+              placeholder="Nombre"
+              class="contact__input"
+              id="input__name"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="contact__input"
+              id="input__email"
+              required
+            />
+            <textarea
+              name=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+              placeholder="Mensaje"
+              id="input__message"
+            ></textarea>
+            <input
+              type="button"
+              value="Enviar"
+              class="contact__button button"
+              id="button__send"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Santiago Aquino</p>
+      <div class="footer__social">
+        <a
+          href="https://github.com/Santiago-Aquino"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/santiagoaquino-desarrollador/"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="mailto:santiagoaquino.dev@gmail.com" class="footer__icon"
+          ><i class="bx bx-envelope"></i
+        ></a>
+      </div>
+      <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    </footer>
+
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
