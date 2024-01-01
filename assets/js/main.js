@@ -66,11 +66,12 @@ const buttonSend = document.getElementById("button__send");
 const inputName = document.getElementById("input__name");
 const inputEmail = document.getElementById("input__email");
 const inputMessage = document.getElementById("input__message");
+const body = document.body
 
 buttonSend.addEventListener("click", (e) => {
   e.preventDefault();
 
-  if (document.body.classList.contains("dark__mode")) {
+  if (body.classList.contains("dark__mode")) {
     if (!inputName.value || !inputEmail.value || !inputMessage.value) {
       Swal.fire({
         title: "Ingrese todos los campos",
@@ -120,14 +121,14 @@ buttonDarkMode.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (window.innerWidth <= 767) {
-    document.body.classList.toggle("dark__mode");
+    body.classList.toggle("dark__mode");
     header.classList.toggle("dark__mode");
     if (links[0].style.color == "white") links[0].style.color = "black"
     else links[0].style.color = "white"
   }
 
   else {
-    document.body.classList.toggle("dark__mode");
+    body.classList.toggle("dark__mode");
     header.classList.toggle("dark__mode");
     for (let i = 0; i < 7; i++) {
       if (links[i].style.color == "white") links[i].style.color = "black";
@@ -135,3 +136,27 @@ buttonDarkMode.addEventListener("click", (e) => {
     }
   }
 });
+
+/* ==== Window Resize ==== */
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 767) {
+    if (body.classList.contains("dark__mode")) links[0].style.color = "white"
+    else links[0].style.color = "black"
+    for (let i = 1; i < 7; i++) {
+      links[i].style.color = "white"
+    }
+  }
+  else {
+    if (body.classList.contains("dark__mode")) {
+      for (let i = 0; i < 7; i++) {
+        links[i].style.color = "white"
+      }
+    }
+    else {
+      for (let i = 0; i < 7; i++) {
+        links[i].style.color = "black"
+      }
+    }
+  }
+})

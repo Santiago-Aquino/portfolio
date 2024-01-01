@@ -18,3 +18,7 @@ https://santiago-aquino.github.io/portfolio/
 
 **stack:** HTML5, CSS3, JavaScript
 
+## Authors
+
+- [@Santiago-Aquino](https://github.com/Santiago-Aquino)
+- [@bedimcode](https://github.com/bedimcode)
