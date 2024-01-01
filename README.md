@@ -16,8 +16,3 @@ https://santiago-aquino.github.io/portfolio/
 - CSS3
 - JavaScript
 
-## Autores
-
-- [@Santiago-Aquino](https://github.com/Santiago-Aquino)
-- [@bedimcode](https://github.com/bedimcode)
-

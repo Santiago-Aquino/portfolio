@@ -1,4 +1,3 @@
-/*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
@@ -11,12 +10,10 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav-menu");
 
-/*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove("show");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
@@ -45,13 +42,12 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2000,
   delay: 200,
-  //     reset: true
 });
 
 sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
@@ -61,7 +57,6 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
-/*====  SWEET ALERT ==== */
 const buttonSend = document.getElementById("button__send");
 const inputName = document.getElementById("input__name");
 const inputEmail = document.getElementById("input__email");
@@ -112,7 +107,6 @@ buttonSend.addEventListener("click", (e) => {
   }
 });
 
-/* DARK MODE */
 const buttonDarkMode = document.getElementById("dark__mode");
 const header = document.getElementById("header");
 const links = document.getElementsByTagName("a");
@@ -136,8 +130,6 @@ buttonDarkMode.addEventListener("click", (e) => {
     }
   }
 });
-
-/* ==== Window Resize ==== */
 
 window.addEventListener('resize', () => {
   if (window.innerWidth <= 767) {
